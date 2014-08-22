@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C39B1FB9BD4F47B0B1DFD49D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6567A3E178BE49D2881871FD /* libPods.a */; };
 		DD361AAD19A6E79400958CA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD361AAC19A6E79400958CA4 /* Foundation.framework */; };
 		DD361AAF19A6E79400958CA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD361AAE19A6E79400958CA4 /* CoreGraphics.framework */; };
 		DD361AB119A6E79400958CA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD361AB019A6E79400958CA4 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6567A3E178BE49D2881871FD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2B0569541343FCA4A0C1A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		DD361AA919A6E79400958CA4 /* HomrMPRAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomrMPRAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD361AAC19A6E79400958CA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD361AAE19A6E79400958CA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +56,7 @@
 		DD361AD319A6E79400958CA4 /* HomrMPRACTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomrMPRACTests-Info.plist"; sourceTree = "<group>"; };
 		DD361AD519A6E79400958CA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD361AD719A6E79400958CA4 /* HomrMPRACTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomrMPRACTests.m; sourceTree = "<group>"; };
+		DD361AE119A6F6AB00958CA4 /* libPods-MDCSwipeToChoose.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MDCSwipeToChoose.a"; path = "Pods/build/Debug-iphoneos/libPods-MDCSwipeToChoose.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 				DD361AAF19A6E79400958CA4 /* CoreGraphics.framework in Frameworks */,
 				DD361AB119A6E79400958CA4 /* UIKit.framework in Frameworks */,
 				DD361AAD19A6E79400958CA4 /* Foundation.framework in Frameworks */,
+				C39B1FB9BD4F47B0B1DFD49D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,7 @@
 				DD361AD119A6E79400958CA4 /* HomrMPRACTests */,
 				DD361AAB19A6E79400958CA4 /* Frameworks */,
 				DD361AAA19A6E79400958CA4 /* Products */,
+				CA2B0569541343FCA4A0C1A2 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +107,12 @@
 		DD361AAB19A6E79400958CA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD361AE119A6F6AB00958CA4 /* libPods-MDCSwipeToChoose.a */,
 				DD361AAC19A6E79400958CA4 /* Foundation.framework */,
 				DD361AAE19A6E79400958CA4 /* CoreGraphics.framework */,
 				DD361AB019A6E79400958CA4 /* UIKit.framework */,
 				DD361ACB19A6E79400958CA4 /* XCTest.framework */,
+				6567A3E178BE49D2881871FD /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD361ADB19A6E79400958CA4 /* Build configuration list for PBXNativeTarget "HomrMPRAC" */;
 			buildPhases = (
+				EF8AF67C159B4BB0933E2656 /* Check Pods Manifest.lock */,
 				DD361AA519A6E79400958CA4 /* Sources */,
 				DD361AA619A6E79400958CA4 /* Frameworks */,
 				DD361AA719A6E79400958CA4 /* Resources */,
+				0769B1CF0DF54959BE00E018 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +253,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0769B1CF0DF54959BE00E018 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF8AF67C159B4BB0933E2656 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD361AA519A6E79400958CA4 /* Sources */ = {
@@ -373,12 +416,17 @@
 		};
 		DD361ADC19A6E79400958CA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA2B0569541343FCA4A0C1A2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HomrMPRAC/HomrMPRAC-Prefix.pch";
 				INFOPLIST_FILE = "HomrMPRAC/HomrMPRAC-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -386,12 +434,17 @@
 		};
 		DD361ADD19A6E79400958CA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA2B0569541343FCA4A0C1A2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HomrMPRAC/HomrMPRAC-Prefix.pch";
 				INFOPLIST_FILE = "HomrMPRAC/HomrMPRAC-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +509,7 @@
 				DD361ADD19A6E79400958CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD361ADE19A6E79400958CA4 /* Build configuration list for PBXNativeTarget "HomrMPRACTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +518,7 @@
 				DD361AE019A6E79400958CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
