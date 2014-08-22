@@ -25,6 +25,7 @@
 		DDC3692619A7D5F400A7DE45 /* HouseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3692519A7D5F400A7DE45 /* HouseListViewController.m */; };
 		DDC3692919A7D68F00A7DE45 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3692819A7D68F00A7DE45 /* DetailViewController.m */; };
 		DDC3692C19A7D7E200A7DE45 /* HouseListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3692B19A7D7E200A7DE45 /* HouseListTableViewCell.m */; };
+		DDC3692F19A7EDE000A7DE45 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3692E19A7EDE000A7DE45 /* DataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		DDC3692819A7D68F00A7DE45 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		DDC3692A19A7D7E200A7DE45 /* HouseListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseListTableViewCell.h; sourceTree = "<group>"; };
 		DDC3692B19A7D7E200A7DE45 /* HouseListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseListTableViewCell.m; sourceTree = "<group>"; };
+		DDC3692D19A7EDE000A7DE45 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		DDC3692E19A7EDE000A7DE45 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				DD361ABE19A6E79400958CA4 /* Main.storyboard */,
 				DD361AC119A6E79400958CA4 /* SwipeViewController.h */,
 				DD361AC219A6E79400958CA4 /* SwipeViewController.m */,
+				DDC3692D19A7EDE000A7DE45 /* DataManager.h */,
+				DDC3692E19A7EDE000A7DE45 /* DataManager.m */,
 				DDC3692419A7D5F400A7DE45 /* HouseListViewController.h */,
 				DDC3692519A7D5F400A7DE45 /* HouseListViewController.m */,
 				DDC3692A19A7D7E200A7DE45 /* HouseListTableViewCell.h */,
@@ -309,6 +314,7 @@
 			files = (
 				DD361AC319A6E79400958CA4 /* SwipeViewController.m in Sources */,
 				DD361ABD19A6E79400958CA4 /* AppDelegate.m in Sources */,
+				DDC3692F19A7EDE000A7DE45 /* DataManager.m in Sources */,
 				DD361AB919A6E79400958CA4 /* main.m in Sources */,
 				DDC3692619A7D5F400A7DE45 /* HouseListViewController.m in Sources */,
 				DDC3692C19A7D7E200A7DE45 /* HouseListTableViewCell.m in Sources */,
