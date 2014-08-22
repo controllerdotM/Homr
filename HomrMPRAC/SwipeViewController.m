@@ -1,25 +1,26 @@
 //
-//  ViewController.m
+//  SwipeViewController.m
 //  HomrMPRAC
 //
 //  Created by Meredith Packham on 8/21/14.
 //  Copyright (c) 2014 Mobile Makers. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SwipeViewController.h"
 #import <MDCSwipeToChooseView.h>
 #import <MDCSwipeToChooseViewOptions.h>
 #import <MDCPanState.h>
 
 
-@interface ViewController () <NSXMLParserDelegate>
+@interface SwipeViewController () <NSXMLParserDelegate>
 @property NSXMLParser *xmlParser;
 @property MDCSwipeToChooseView *houseView;
+@property (weak, nonatomic) IBOutlet UIView *holdingView;
 
 
 @end
 
-@implementation ViewController
+@implementation SwipeViewController
 
 
 
@@ -35,8 +36,8 @@
 
     options.delegate = self;
     options.likedText = @"Like";
-    options.likedColor = [UIColor blueColor];
-    options.nopeText = @"Dislike";
+    options.likedColor = [UIColor purpleColor];
+    options.nopeText = @"EW";
     options.onPan = ^(MDCPanState *state)
     {
         if (state.direction == MDCSwipeDirectionNone) {
@@ -55,7 +56,7 @@
 
     };
 
-    self.houseView = [[MDCSwipeToChooseView alloc] initWithFrame:self.view.bounds
+    self.houseView = [[MDCSwipeToChooseView alloc] initWithFrame:self.holdingView.frame
                                                          options:options];
     self.houseView.imageView.image = [UIImage imageNamed:@"photo"];
 

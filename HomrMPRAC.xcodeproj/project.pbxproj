@@ -15,13 +15,16 @@
 		DD361AB919A6E79400958CA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD361AB819A6E79400958CA4 /* main.m */; };
 		DD361ABD19A6E79400958CA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD361ABC19A6E79400958CA4 /* AppDelegate.m */; };
 		DD361AC019A6E79400958CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD361ABE19A6E79400958CA4 /* Main.storyboard */; };
-		DD361AC319A6E79400958CA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD361AC219A6E79400958CA4 /* ViewController.m */; };
+		DD361AC319A6E79400958CA4 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD361AC219A6E79400958CA4 /* SwipeViewController.m */; };
 		DD361AC519A6E79400958CA4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD361AC419A6E79400958CA4 /* Images.xcassets */; };
 		DD361ACC19A6E79400958CA4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD361ACB19A6E79400958CA4 /* XCTest.framework */; };
 		DD361ACD19A6E79400958CA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD361AAC19A6E79400958CA4 /* Foundation.framework */; };
 		DD361ACE19A6E79400958CA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD361AB019A6E79400958CA4 /* UIKit.framework */; };
 		DD361AD619A6E79400958CA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD361AD419A6E79400958CA4 /* InfoPlist.strings */; };
 		DD361AD819A6E79400958CA4 /* HomrMPRACTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD361AD719A6E79400958CA4 /* HomrMPRACTests.m */; };
+		DDC3692619A7D5F400A7DE45 /* HouseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3692519A7D5F400A7DE45 /* HouseListViewController.m */; };
+		DDC3692919A7D68F00A7DE45 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3692819A7D68F00A7DE45 /* DetailViewController.m */; };
+		DDC3692C19A7D7E200A7DE45 /* HouseListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3692B19A7D7E200A7DE45 /* HouseListTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +51,8 @@
 		DD361ABB19A6E79400958CA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD361ABC19A6E79400958CA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DD361ABF19A6E79400958CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DD361AC119A6E79400958CA4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DD361AC219A6E79400958CA4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DD361AC119A6E79400958CA4 /* SwipeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
+		DD361AC219A6E79400958CA4 /* SwipeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
 		DD361AC419A6E79400958CA4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DD361ACA19A6E79400958CA4 /* HomrMPRACTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomrMPRACTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD361ACB19A6E79400958CA4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -57,6 +60,12 @@
 		DD361AD519A6E79400958CA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD361AD719A6E79400958CA4 /* HomrMPRACTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomrMPRACTests.m; sourceTree = "<group>"; };
 		DD361AE119A6F6AB00958CA4 /* libPods-MDCSwipeToChoose.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MDCSwipeToChoose.a"; path = "Pods/build/Debug-iphoneos/libPods-MDCSwipeToChoose.a"; sourceTree = "<group>"; };
+		DDC3692419A7D5F400A7DE45 /* HouseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseListViewController.h; sourceTree = "<group>"; };
+		DDC3692519A7D5F400A7DE45 /* HouseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseListViewController.m; sourceTree = "<group>"; };
+		DDC3692719A7D68F00A7DE45 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DDC3692819A7D68F00A7DE45 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		DDC3692A19A7D7E200A7DE45 /* HouseListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseListTableViewCell.h; sourceTree = "<group>"; };
+		DDC3692B19A7D7E200A7DE45 /* HouseListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseListTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +132,14 @@
 				DD361ABB19A6E79400958CA4 /* AppDelegate.h */,
 				DD361ABC19A6E79400958CA4 /* AppDelegate.m */,
 				DD361ABE19A6E79400958CA4 /* Main.storyboard */,
-				DD361AC119A6E79400958CA4 /* ViewController.h */,
-				DD361AC219A6E79400958CA4 /* ViewController.m */,
+				DD361AC119A6E79400958CA4 /* SwipeViewController.h */,
+				DD361AC219A6E79400958CA4 /* SwipeViewController.m */,
+				DDC3692419A7D5F400A7DE45 /* HouseListViewController.h */,
+				DDC3692519A7D5F400A7DE45 /* HouseListViewController.m */,
+				DDC3692A19A7D7E200A7DE45 /* HouseListTableViewCell.h */,
+				DDC3692B19A7D7E200A7DE45 /* HouseListTableViewCell.m */,
+				DDC3692719A7D68F00A7DE45 /* DetailViewController.h */,
+				DDC3692819A7D68F00A7DE45 /* DetailViewController.m */,
 				DD361AC419A6E79400958CA4 /* Images.xcassets */,
 				DD361AB319A6E79400958CA4 /* Supporting Files */,
 			);
@@ -292,9 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD361AC319A6E79400958CA4 /* ViewController.m in Sources */,
+				DD361AC319A6E79400958CA4 /* SwipeViewController.m in Sources */,
 				DD361ABD19A6E79400958CA4 /* AppDelegate.m in Sources */,
 				DD361AB919A6E79400958CA4 /* main.m in Sources */,
+				DDC3692619A7D5F400A7DE45 /* HouseListViewController.m in Sources */,
+				DDC3692C19A7D7E200A7DE45 /* HouseListTableViewCell.m in Sources */,
+				DDC3692919A7D68F00A7DE45 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
